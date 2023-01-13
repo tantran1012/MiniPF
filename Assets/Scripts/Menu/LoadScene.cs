@@ -2,11 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-public class StartButton : MonoBehaviour
+public class LoadScene : MonoBehaviour
 {
     // Start is called before the first frame update
-    public void StartGame()
+    public Object scene;
+    public void Load()
     {
-        SceneManager.LoadScene("Tutorial");
+        SceneManager.LoadSceneAsync(scene.name);
     }
 }
