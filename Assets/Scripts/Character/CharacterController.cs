@@ -38,16 +38,16 @@ public class CharacterController : MonoBehaviour
         rb.velocity = new Vector2(horizontal * moveSpeed, rb.velocity.y);
         if (Input.GetButtonDown("Jump"))
         {
-            if (!jump && !doubleJump)
+            if (!jump && !doubleJump && IsGrounded())
             {
-                rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+                rb.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
                 jump = true;
                 jumpSoundEffect.Play();
 
             }
             else if (jump && !doubleJump)
             {
-                rb.velocity = new Vector2(rb.velocity.x, doubleJumpForce);
+                rb.AddForce(new Vector2(0, doubleJumpForce), ForceMode2D.Impulse);
                 doubleJump = true;
                 jump = false;
                 jumpSoundEffect.Play();
