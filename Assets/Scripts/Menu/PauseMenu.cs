@@ -34,11 +34,12 @@ public class PauseMenu : MonoBehaviour
     }
 
     public void LoadMainMenu() {
+
         LoadScene("Assets/Scenes/UI/Start Scene.unity");
     }
 
     public void SelectLevel() {
-        
+        LoadScene("Assets/Scenes/UI/Select Level Scene.unity");
     }
 
     private void LoadScene(string path) {

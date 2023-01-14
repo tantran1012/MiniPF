@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Finish : MonoBehaviour
 {
+    public GameObject finishObject;
     private AudioSource FinishSoundEffect;
     // Start is called before the first frame update
     void Start()
@@ -22,6 +23,6 @@ public class Finish : MonoBehaviour
 
     private void CompleteLevel()
     {
-
+        finishObject.SetActive(true);
     }
 }

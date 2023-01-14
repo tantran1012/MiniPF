@@ -48,20 +48,20 @@ TagManager:
   - name: Background
     uniqueID: 1443047359
     locked: 0
+  - name: Backwall
+    uniqueID: 2247379665
+    locked: 0
+  - name: Building
+    uniqueID: 170213575
+    locked: 0
   - name: Traps
     uniqueID: 34917089
     locked: 0
   - name: Ground
     uniqueID: 2040098621
     locked: 0
-  - name: Backwall
-    uniqueID: 2247379665
-    locked: 0
   - name: TopBackWall
     uniqueID: 2729165761
-    locked: 0
-  - name: Building
-    uniqueID: 170213575
     locked: 0
   - name: Tip
     uniqueID: 567239237

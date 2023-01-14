@@ -67,7 +67,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: aac76a02e44f814458a859c4d751bcba, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c0549ee616350eb48bfae79f3ca6a911, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -166,7 +166,7 @@ GameObject:
   - component: {fileID: 5035195947072390673}
   - component: {fileID: 2448237476252651795}
   m_Layer: 5
-  m_Name: Button_arrow_right
+  m_Name: Next
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -274,7 +274,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5035195947072390673}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2737805232619141966}
+        m_TargetAssemblyTypeName: EndLevelScene, Assembly-CSharp
+        m_MethodName: Next
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1193946316102404323
 GameObject:
   m_ObjectHideFlags: 0
@@ -925,6 +937,7 @@ GameObject:
   - component: {fileID: 1362511827008526940}
   - component: {fileID: 1362511827008526941}
   - component: {fileID: 1362511827008526928}
+  - component: {fileID: 2737805232619141966}
   - component: {fileID: 1362511827008526929}
   m_Layer: 5
   m_Name: Canvas
@@ -1031,6 +1044,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenuUI: {fileID: 1362511827141278979}
+--- !u!114 &2737805232619141966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1362511827008526938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e6500af7416dd844b6d864d3137ee8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1362511827008526929
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1883,7 +1908,7 @@ GameObject:
   - component: {fileID: 3716587117272266487}
   - component: {fileID: 193645550582605868}
   m_Layer: 5
-  m_Name: Button_repeat
+  m_Name: Replay
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1991,7 +2016,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3716587117272266487}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2737805232619141966}
+        m_TargetAssemblyTypeName: EndLevelScene, Assembly-CSharp
+        m_MethodName: Replay
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3583297348017510543
 GameObject:
   m_ObjectHideFlags: 0
@@ -2078,12 +2115,12 @@ GameObject:
   m_Component:
   - component: {fileID: 2345211965955257862}
   m_Layer: 0
-  m_Name: EndLevelMenu
+  m_Name: EndLevelScene
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2345211965955257862
 Transform:
   m_ObjectHideFlags: 0
@@ -2116,7 +2153,7 @@ GameObject:
   - component: {fileID: 2792397204875741100}
   - component: {fileID: 771871510362794702}
   m_Layer: 5
-  m_Name: Button_menu
+  m_Name: Menu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2224,4 +2261,16 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2792397204875741100}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2737805232619141966}
+        m_TargetAssemblyTypeName: EndLevelScene, Assembly-CSharp
+        m_MethodName: Menu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
