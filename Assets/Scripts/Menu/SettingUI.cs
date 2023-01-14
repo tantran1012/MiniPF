@@ -6,12 +6,18 @@ using UnityEngine.UI;
 public class SettingUI : MonoBehaviour
 {
     public GameObject GameSettingUI;
-    public AudioMixer musicMixer;
-    public AudioMixer soundMixer;
+    public AudioMixer audioMixer;
     public Dropdown resolutionDropdown;
+    public Slider musicSlider;
+    public Slider soundSlider;
 
     Resolution [] resolutions;
+    float temp;
     void Start() {
+        audioMixer.GetFloat("music",out temp);
+        musicSlider.value = temp;
+        audioMixer.GetFloat("sound", out temp);
+        soundSlider.value = temp;
         resolutions = Screen.resolutions;
         resolutionDropdown.ClearOptions();
         List<string> options = new List<string>();
@@ -36,11 +42,11 @@ public class SettingUI : MonoBehaviour
     }
 
     public void SetVolume(float volume) {
-        musicMixer.SetFloat("volume", volume);
+        audioMixer.SetFloat("music", volume);
     }
 
     public void SetSound(float volume) {
-        soundMixer.SetFloat("Sound", volume);
+        audioMixer.SetFloat("sound", volume);
     }
 
     public void SetQuality(int quality) {
