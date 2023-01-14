@@ -280,6 +280,10 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: a3dc7fd3-4936-4aff-85b4-c3d16fa90e2a
     m_ActionName: Player/Jump[/Keyboard/space]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 582fb90c-f280-4a9c-bfcf-27c234e62ca9
+    m_ActionName: PauseMenu/Pause[/Keyboard/escape]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
