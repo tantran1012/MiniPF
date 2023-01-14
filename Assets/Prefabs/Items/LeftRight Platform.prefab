@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 8262477412251532959}
   - component: {fileID: 8262477412251532958}
   - component: {fileID: 8262477412251532953}
+  - component: {fileID: 1089748452798478294}
   m_Layer: 6
   m_Name: Moving Platform
   m_TagString: Moving Platform
@@ -91,7 +92,7 @@ SpriteRenderer:
   m_SpriteSortPoint: 0
 --- !u!95 &8262477412251532957
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 2866674865083583886, guid: ea70373d83f087f49a79cfec05a13b44, type: 3}
   m_PrefabInstance: {fileID: 6152566867634025235}
@@ -108,7 +109,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!114 &8262477412251532956
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -136,7 +137,7 @@ BoxCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.059121817}
   m_SpriteTilingProperty:
@@ -340,6 +341,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2866674865083583884, guid: ea70373d83f087f49a79cfec05a13b44, type: 3}
+      propertyPath: m_UsedByEffector
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2866674865083583887, guid: ea70373d83f087f49a79cfec05a13b44, type: 3}
       propertyPath: waypoints.Array.data[0]
       value: 
@@ -350,3 +355,22 @@ PrefabInstance:
       objectReference: {fileID: 8262477413807674474}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ea70373d83f087f49a79cfec05a13b44, type: 3}
+--- !u!251 &1089748452798478294
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8262477412133310911}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RotationalOffset: 0
+  m_UseOneWay: 0
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
