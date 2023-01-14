@@ -48,6 +48,9 @@ TagManager:
   - name: Background
     uniqueID: 1443047359
     locked: 0
+  - name: Traps
+    uniqueID: 34917089
+    locked: 0
   - name: Ground
     uniqueID: 2040098621
     locked: 0
@@ -59,9 +62,6 @@ TagManager:
     locked: 0
   - name: Building
     uniqueID: 170213575
-    locked: 0
-  - name: Traps
-    uniqueID: 34917089
     locked: 0
   - name: Tip
     uniqueID: 567239237
