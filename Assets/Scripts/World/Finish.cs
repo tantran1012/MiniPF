@@ -24,5 +24,6 @@ public class Finish : MonoBehaviour
     private void CompleteLevel()
     {
         finishObject.SetActive(true);
+        Time.timeScale = 0;
     }
 }

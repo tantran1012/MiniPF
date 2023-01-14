@@ -2335,7 +2335,7 @@ RectTransform:
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &1184668370
 Animator:
-  serializedVersion: 5
+  serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -2352,7 +2352,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &1184668371
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3867,7 +3867,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52792333e0f20e04aa80056ffa5401ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene: {fileID: 102900000, guid: cfca9cef2b8ce6f46bf938357584ad76, type: 3}
+  scene: Assets/Scenes/UI/Select Level Scene.unity
 --- !u!114 &1808578868
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4245,6 +4245,7 @@ GameObject:
   - component: {fileID: 1917853277}
   - component: {fileID: 1917853276}
   - component: {fileID: 1917853275}
+  - component: {fileID: 1917853278}
   m_Layer: 5
   m_Name: Exit
   m_TagString: Untagged
@@ -4316,7 +4317,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1917853276}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1917853278}
+        m_TargetAssemblyTypeName: Exit, Assembly-CSharp
+        m_MethodName: doExitGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1917853276
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4355,6 +4368,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1917853273}
   m_CullTransparentMesh: 1
+--- !u!114 &1917853278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1917853273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b51724c4aac55804f84f8cd0084cb31a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1936487831
 GameObject:
   m_ObjectHideFlags: 0
