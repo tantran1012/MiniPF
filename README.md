@@ -10,4 +10,4 @@ Mini Game 2D xây dựng bằng unity
 - Unity engine
 
 ## Demo 
-[MiniPF](https://play.unity.com/mg/other/webgl-builds-273314)
+[MiniPF](https://play.unity.com/en/games/f4ddee5e-0617-4249-b324-f85c2c2a7113/the-universe)
